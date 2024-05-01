@@ -1,0 +1,156 @@
+@import "../utils/colors";
+
+.menuDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  bottom: 30px;
+}
+
+.menuDiv__Explanation {
+  position: relative;
+
+  left: 15px;
+  bottom: 20px;
+
+  h3 {
+    color: getColor(foreground-secndoary);
+  }
+
+  h1 {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+}
+
+.menuDiv__ListUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  p {
+    display: inline;
+    flex: 1;
+  }
+}
+
+.menuDiv__h1Span {
+  display: block;
+}
+
+.menuDiv__LoremBtn {
+  background-color: getColor(background-secndoary);
+  padding: 15px 30px;
+
+  border: 0;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 20px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+  }
+  img {
+    width: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.menuDiv {
+  transform: skewY(-15deg);
+  padding-bottom: 70px;
+
+  &__Explanation {
+    transform: skewY(15deg);
+  }
+  &__Image {
+    transform: skewY(15deg);
+  }
+}
+
+@media (min-width: 376px) {
+  .menuDiv {
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    padding: 50px 0;
+    padding-bottom: 20px;
+    gap: 40px;
+  }
+
+  .menuDiv__Explanation {
+    position: relative;
+
+    left: 15px;
+    bottom: 20px;
+
+    h3 {
+      color: getColor(foreground-secndoary);
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .menuDiv__ListUl {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    li {
+      display: flex;
+
+      align-items: center;
+      gap: 5px;
+      padding: 5px;
+      background-color: white;
+      border-radius: 25px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .menuDiv {
+    transform: skewY(-10deg);
+    padding-bottom: 70px;
+
+    &__Explanation {
+      transform: skewY(10deg);
+    }
+    &__Image {
+      transform: skewY(10deg);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+$colors: (
+  "background-primary": #feedbc,
+  "background-secndoary": #ffbb45,
+  "foreground-pirmary": black,
+  "foreground-secndoary": #ffbb45,
+);
+
+@function getColor($colorName) {
+  @return map-get($colors, $colorName);
+}
